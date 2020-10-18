@@ -86,3 +86,19 @@ func main() {
 	router.HandleFunc("/meeting/{id}", GetSingleEndPoint).Methods("GET")
 	http.ListenAndServe(":12345", router)
 }
+
+//To add data to the database
+//In POSTMAN 
+//set the request as "post" and give the url as "http://localhost:12345/meeting
+//under body
+//{
+//    "Title": "Online class",
+//   "Participants": 60,
+//  "stime": "11:00:00",
+//    "ftime": "12:30:00"
+//    "Name" : "Anastesia",
+//    "Email": "Ana@hotmail.com",
+//    "RSVP" : "No"
+//} 
+
+//similarly can create number of objects that gets saved onto the database
